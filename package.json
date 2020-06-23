@@ -1,0 +1,21 @@
+{
+  "name": "mosaic-api-scripts",
+  "version": "1.0.0",
+  "description": "Miscellaneous api scripts for the Mosaic genomics platform",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chmille4/mosaic-api-scripts.git"
+  },
+  "author": "Chase Miller",
+  "bugs": {
+    "url": "https://github.com/chmille4/mosaic-api-scripts/issues"
+  },
+  "homepage": "https://github.com/chmille4/mosaic-api-scripts#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
