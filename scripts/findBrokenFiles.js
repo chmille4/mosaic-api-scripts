@@ -6,7 +6,7 @@
 const axios = require('axios');
 const fs = require('fs')
 
-const {token_id, token_secret} = require('./mosaic_credentials.json');
+const {token_id, token_secret} = require(__dirname +'/../mosaic_credentials.json');
 
 if (process.argv.length < 4){
 	console.log("Usage:")
