@@ -10,7 +10,7 @@ npm install
 ```
 
 ## Add credentials
-1. Generate API Access Token on Mosaic at mosaic_instance_url/#/account/settings
+1. Generate API Access Token on the Mosaic web app at mosaic_instance_url/#/account/settings
 2. Change name of file `mosaic_credentials.json.template` to `mosaic_credentials.json`
 3. Add credentials to `mosaic_credentials.json`
 
