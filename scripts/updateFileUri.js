@@ -9,6 +9,8 @@ const fs = require('fs')
 const {token_id, token_secret} = require(__dirname +'/../mosaic_credentials.json');
 
 if (process.argv.length < 7){
+	console.log("Description:")
+	console.log("\tThis script will update a file uri with a new given uri")
 	console.log("Usage:")
 	console.log("\tnode mosaicUpdateFilePaths <URL-to-Mosaic> <project_id> <sample_id> <file_id> <new_uri> ");	
 	console.log("\t e.g. node mosaicUpdateFilePaths https://mosaic.frameshift.io 5 2 10 /data/1.bam")
