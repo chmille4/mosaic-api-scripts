@@ -37,8 +37,14 @@ if (process.argv.length < 2){
 				const newUid = r.rows[0].uid;
 				variantFilter.filter.annotation_filters[afIndex].uid = newUid
 			}
-			const sql = `UPDATE variant_filters set filter = '${JSON.stringify(variantFilter.filter)}' where id = ${variantFilter.id}`;
-			await client.query(sql);
+			try {
+				const sql = `UPDATE variant_filters set filter = '${JSON.stringify(variantFilter.filter)}' where id = ${variantFilter.id}`;
+				await client.query(sql);
+			} catch(error) {
+				console.log(error)
+				console.log('variant filter id = ', variantFilter.id)
+				console.log('filter = ', JSON.stringify(variantFilter.filter));
+			}
 		}
 	}
 	await client.end()
