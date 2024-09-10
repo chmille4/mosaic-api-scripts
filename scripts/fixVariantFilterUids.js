@@ -21,6 +21,9 @@ if (process.argv.length < 2){
 
 
 	for (let index in results.rows) {
+		if (index % 200 === 0) {
+			console.log(index)
+		}
 		const variantFilter = results.rows[index];
 		const annotation_filters = variantFilter.filter.annotation_filters;
 		if (annotation_filters) {
